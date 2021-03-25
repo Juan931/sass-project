@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" sizes="any">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <base href="https://picsum.photos/" target="_blank">
     <title>Sass Project</title>
 </head>
+
 <body>
-<h1 class="title">Hello world!</h1>
+    <header class="header-princ">
+        <h1 class="title">Lorem Picsum</h1>
+        <P class="header-p">The Lorem Ipsum for photos.</P>
+        <img class="img-random1" src="200/300?random=1" alt="image1" />
+    </header>
+
+    <section class="section-1">
+        <h2 class="h2-section-1"> Easy to use, stylish placeholders</h2>
+        <p>Just add your desired image size (width & height) after our URL, and you'll get a random image.</p>
+        <p class="p-section-1"> To get a square image, just add the size.</p>
+    </section>
+
+    <section class="section-2">
+        <h2 class="h2-section-2">
+            Specific Image
+        </h2>
+        <p class="p-section-2">Get a specific image by adding /id/{image} to the start of the url.</p>
+        <img class="random-2" src="200/300?random=2" alt="image2" />
+    </section>
+
+    <section class="section-3">
+        <img class="img-random-3" src="200/300?random=3" alt="image3" />
+        <h2 class="h2-section-3">
+            Static Random Image
+        </h2>
+        <p class="p-section-3">
+            Get the same random image every time based on a seed, by adding /seed/{seed} to the start of the url.
+        </p>
+
+    </section>
+    <section class="section-4">
+        <h2 class="h2-section-4">
+            Grayscale
+        </h2>
+        <p class="p-section-4">
+            Get a grayscale image by appending ?grayscale to the end of the url.
+        </p>
+        <img class="img-random-4" src="200/300?random=4" alt="image4" />
+
+    </section>
+    <section class="section-5">
+        <img class="img-random-5" src="200/300?random=5" alt="image5" />
+        <h2 class="h2-section-5">
+            Blur
+        </h2>
+        <p class="p-section-5">Get a blurred image by appending ?blur to the end of the url.</p>
+        <p class="p-section-5s">You can adjust the amount of blur by providing a number between 1 and 10.</p>
+
+    </section>
+
+    <section class="section-6">
+        <h2 class="h2-section-6">Advanced Usage</h2>
+        <div class="p-section-6">
+            <p>You may combine any of the options above.</p>
+            <p>For example, to get a specific image that is grayscale and blurred.</p>
+            <p>To request multiple images of the same size in your browser, add the random query param to prevent the images from being cached:</p>
+            <p>If you need a file ending, you can add .jpg to the end of the url.</p>
+            <p>To get an image in the WebP format, you can add .webp to the end of the url.</p>
+        </div>
+        <img class="img-random-6" src="200/300?random=6" alt="image6" />
+
+    </section>
+    <section class="section-7">
+
+        <h2 class="h2-section-7">List Images</h2>
+        <p class="p-section-7">Get a list of images by using the /v2/list endpoint.</p>
+        <p class="p-section-7a">The API will return 30 items per page by default.</p>
+        <p class="p-section-7b">To request another page, use the ?page parameter.</p>
+        <p class="p-section-7c">To change the amount of items per page, use the ?limit parameter.</p>
+        <p class="p-section-7d">The Link header includes pagination information about the next/previous pages</p>
+    </section>
+
+    <section class="section-8">
+        <h2 class="h2-section-8"> Image Details</h2>
+
+        <p class="p-section-8">Get information about a specific image by using the the /id/{id}/info endpoint.</p>
+        <p class="p-section-8s">You can find out the ID of an image by looking at the Picsum-ID header, or the User Comment field in the EXIF metadata.</p>
+        </div>
+    </section>
+    <footer>
+        <p class="p-footer">Created by David Marby & Nijiko Yonskai</p>
+        <small>Images from Unsplash</small>
+    </footer>
+
 </body>
+
 </html>
